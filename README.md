@@ -18,6 +18,15 @@ mealugai/
 │   │   └── styles.css      # Estilos customizados
 │   └── js/
 │       └── main.js         # Funcionalidades JavaScript
+├── react-app/              # Versão React/Next.js
+│   ├── src/
+│   │   └── app/
+│   │       ├── page.tsx    # Página principal
+│   │       ├── layout.tsx  # Layout da aplicação
+│   │       └── globals.css # Estilos globais
+│   ├── package.json        # Dependências
+│   ├── tailwind.config.ts  # Configuração Tailwind
+│   └── vercel.json         # Configuração Vercel
 ├── referencia-visual-cursor/ # Referências de design
 │   ├── referencia1.png
 │   ├── referencia2.png
@@ -38,8 +47,11 @@ mealugai/
    # Acesse http://localhost:8000
    ```
 
-### Versão React (em desenvolvimento)
+### Versão React (react-app/)
 ```bash
+# Navegar para o diretório
+cd react-app
+
 # Instalar dependências
 npm install
 
@@ -48,6 +60,10 @@ npm run dev
 
 # Build para produção
 npm run build
+
+# Deploy na Vercel
+npm run build
+# Conectar repositório na Vercel
 ```
 
 ## 🎨 Design System
@@ -143,11 +159,11 @@ npm run test
 - [x] Formulários funcionais
 - [x] Animações básicas
 
-### Fase 2 🚧
-- [ ] Migração para React/Next.js
-- [ ] Componentização
-- [ ] TypeScript
-- [ ] Deploy na Vercel
+### Fase 2 ✅
+- [x] Migração para React/Next.js
+- [x] Componentização
+- [x] TypeScript
+- [x] Deploy na Vercel (configurado)
 
 ### Fase 3 📋
 - [ ] Analytics integrado
