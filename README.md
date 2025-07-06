@@ -18,15 +18,15 @@ mealugai/
 │   │   └── styles.css      # Estilos customizados
 │   └── js/
 │       └── main.js         # Funcionalidades JavaScript
-├── react-app/              # Versão React/Next.js
-│   ├── src/
-│   │   └── app/
-│   │       ├── page.tsx    # Página principal
-│   │       ├── layout.tsx  # Layout da aplicação
-│   │       └── globals.css # Estilos globais
-│   ├── package.json        # Dependências
-│   ├── tailwind.config.ts  # Configuração Tailwind
-│   └── vercel.json         # Configuração Vercel
+├── src/                    # Código fonte React/Next.js
+│   └── app/
+│       ├── page.tsx        # Página principal
+│       ├── layout.tsx      # Layout da aplicação
+│       └── globals.css     # Estilos globais
+├── public/                 # Arquivos estáticos
+├── package.json            # Dependências
+├── tailwind.config.ts      # Configuração Tailwind
+├── vercel.json             # Configuração Vercel
 ├── referencia-visual-cursor/ # Referências de design
 │   ├── referencia1.png
 │   ├── referencia2.png
@@ -37,21 +37,8 @@ mealugai/
 
 ## 🚀 Como Executar
 
-### Versão HTML (landing/)
-1. Navegue até a pasta `landing/`
-2. Abra o arquivo `index.html` em qualquer navegador
-3. Ou use um servidor local:
-   ```bash
-   cd landing
-   python -m http.server 8000
-   # Acesse http://localhost:8000
-   ```
-
-### Versão React (react-app/)
+### Versão React/Next.js (Principal)
 ```bash
-# Navegar para o diretório
-cd react-app
-
 # Instalar dependências
 npm install
 
@@ -64,6 +51,16 @@ npm run build
 # Deploy na Vercel
 npm run build
 # Conectar repositório na Vercel
+```
+
+### Versão HTML (landing/)
+```bash
+# Navegar para a pasta
+cd landing
+
+# Abrir index.html no navegador ou usar servidor local
+python -m http.server 8000
+# Acesse http://localhost:8000
 ```
 
 ## 🎨 Design System
@@ -103,19 +100,19 @@ npm run build
 
 ## 🛠️ Tecnologias
 
+### Versão React/Next.js
+- **Next.js 14** - Framework React
+- **TypeScript** - Tipagem estática
+- **TailwindCSS** - Framework CSS utilitário
+- **Lucide React** - Biblioteca de ícones
+- **Framer Motion** - Animações
+- **Vercel** - Deploy
+
 ### Versão HTML
 - **HTML5** - Estrutura semântica
 - **TailwindCSS** - Framework CSS utilitário
 - **JavaScript Vanilla** - Funcionalidades interativas
 - **Lucide Icons** - Biblioteca de ícones
-
-### Versão React (planejada)
-- **React 18** - Framework JavaScript
-- **Next.js** - Framework React
-- **TypeScript** - Tipagem estática
-- **TailwindCSS** - Estilização
-- **Framer Motion** - Animações
-- **Vercel** - Deploy
 
 ## 📊 Métricas de Performance
 
@@ -191,4 +188,4 @@ Este projeto está sob a licença MIT. Veja o arquivo `LICENSE` para mais detalh
 
 ---
 
-Desenvolvido com ❤️ para transformar o aluguel corporativo 
+Desenvolvido com ❤️ para transformar o aluguel corporativo

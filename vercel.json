@@ -6,7 +6,7 @@
   "devCommand": "npm run dev",
   "regions": ["gru1"],
   "functions": {
-    "app/**/*.tsx": {
+    "src/app/**/*.tsx": {
       "maxDuration": 30
     }
   },
@@ -25,8 +25,19 @@
         {
           "key": "X-XSS-Protection",
           "value": "1; mode=block"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
         }
       ]
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/landing",
+      "destination": "/landing/index.html",
+      "permanent": false
     }
   ]
 } 
