@@ -1,4 +1,5 @@
-import { Package, TrendingUp, FileText, ShieldCheck, Zap, Play, X, Check, Monitor, DollarSign, Shield, Truck, Headphones, RefreshCw, BookOpen, Building, GraduationCap, Users, Wrench, Chair, Laptop, Plus } from 'lucide-react';
+import { Package, TrendingUp, FileText, ShieldCheck, Zap, Play, X, Check, Monitor, DollarSign, Shield, Truck, Headphones, RefreshCw, BookOpen, Building, GraduationCap, Users, Wrench, Sofa, Laptop, Plus } from 'lucide-react';
+import LeadForm from '@/components/LeadForm';
 
 export default function Home() {
   return (
@@ -54,29 +55,7 @@ export default function Home() {
                 </div>
               </div>
               
-              <div className="bg-white rounded-2xl shadow-xl p-8 border border-gray-100">
-                <h3 className="text-2xl font-bold text-cinza-escuro mb-6">Solicite sua proposta personalizada</h3>
-                <form className="space-y-6">
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">Nome completo</label>
-                    <input type="text" className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-verde-vibrante focus:border-transparent" placeholder="Seu nome" />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">E-mail corporativo</label>
-                    <input type="email" className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-verde-vibrante focus:border-transparent" placeholder="seu@email.com" />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">Empresa</label>
-                    <input type="text" className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-verde-vibrante focus:border-transparent" placeholder="Nome da sua empresa" />
-                  </div>
-                  <button type="submit" className="w-full bg-verde-vibrante text-white py-3 rounded-lg font-semibold hover:bg-verde-escuro transition-colors">
-                    Enviar solicitação
-                  </button>
-                </form>
-                <p className="text-sm text-gray-500 mt-4 text-center">
-                  ✓ Sem compromisso • ✓ Proposta em 24h • ✓ Consultoria gratuita
-                </p>
-              </div>
+              <LeadForm fonte="hero" />
             </div>
           </div>
         </div>
@@ -384,7 +363,7 @@ export default function Home() {
             
             <div className="bg-white border border-gray-200 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow card-hover">
               <div className="h-48 bg-gradient-to-br from-purple-500 to-purple-600 flex items-center justify-center">
-                <Chair className="w-16 h-16 text-white" />
+                <Sofa className="w-16 h-16 text-white" />
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-cinza-escuro mb-3">Mobiliário Empresarial</h3>
@@ -449,13 +428,7 @@ export default function Home() {
             </p>
             
             <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 max-w-md mx-auto">
-              <form className="space-y-4">
-                <input type="text" placeholder="Nome da empresa" className="w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 text-white placeholder-green-100 focus:outline-none focus:ring-2 focus:ring-white" />
-                <input type="email" placeholder="E-mail corporativo" className="w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 text-white placeholder-green-100 focus:outline-none focus:ring-2 focus:ring-white" />
-                <button type="submit" className="w-full bg-white text-verde-escuro py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
-                  Fale com nosso time
-                </button>
-              </form>
+              <LeadForm fonte="cta" variant="minimal" />
             </div>
             
             <p className="text-sm text-green-200 mt-6">
