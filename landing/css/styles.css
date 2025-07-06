@@ -1,0 +1,100 @@
+/* Google Fonts - Inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+/* Configurações base */
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Efeito glassmorfismo */
+.glass-effect {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Cores customizadas */
+:root {
+    --verde-escuro: #145C52;
+    --verde-vibrante: #29A073;
+    --cinza-escuro: #333333;
+    --cinza-gelo: #F8F9FA;
+    --accent: #F9B233;
+}
+
+/* Animações e transições */
+.hover-scale:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.smooth-transition {
+    transition: all 0.3s ease;
+}
+
+/* Efeitos de hover para cards */
+.card-hover {
+    transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Gradientes customizados */
+.gradient-verde {
+    background: linear-gradient(135deg, var(--verde-vibrante), var(--verde-escuro));
+}
+
+.gradient-hero {
+    background: linear-gradient(135deg, var(--cinza-gelo), #ffffff);
+}
+
+/* Responsividade adicional */
+@media (max-width: 768px) {
+    .mobile-text-center {
+        text-align: center;
+    }
+    
+    .mobile-padding {
+        padding: 1rem;
+    }
+}
+
+/* Efeitos de foco para formulários */
+.form-input:focus {
+    outline: none;
+    ring: 2px;
+    ring-color: var(--verde-vibrante);
+    border-color: transparent;
+}
+
+/* Loading states */
+.loading {
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+/* Scroll suave */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Customização de scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--verde-vibrante);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--verde-escuro);
+} 

@@ -1,0 +1,6 @@
+---
+description: Sempre que esetiver construindo arquivos de frontend como jsx, html, css, scss e outros, não utilize emojis, sempre utilize ícones de libs como lucide
+globs: 
+alwaysApply: false
+---
+Utilie sempre libs como Lucide para aplicar ícones no frontend, evite utilizar emojis e qualquer outro tipo de simbologia cafona, procure sempre manter um visual futurista, usando conceitos modernos de interfaces de acordo com a tendência atual como glassmorfismo, preze por uma U.I, U.X e Copy impecável, moderno e altamente profissional, tudo que produzir mantenha o padrão visual premium, experiencia do usuário fluida e responsiva
